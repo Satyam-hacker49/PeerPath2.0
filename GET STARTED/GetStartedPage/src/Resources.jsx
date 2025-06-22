@@ -15,14 +15,6 @@ const Resources = ({ currentUser, onLogout }) => {
       icon: "🌐"
     },
     {
-      id: 2,
-      title: "Google Drive Study Materials",
-      description: "Comprehensive drive containing all 1st year notes and resources",
-      link: "https://drive.google.com/drive/folders/1xKRoLEPgIytHXwwpbhOFalefSSenhDnm?usp=sharing",
-      type: "Drive Link",
-      icon: "📁"
-    },
-    {
       id: 3,
       title: "MANIT Study Portal App",
       description: "Android app for downloading class notes, assignments, and previous year papers",
@@ -125,6 +117,14 @@ const Resources = ({ currentUser, onLogout }) => {
         link: 'https://www.instagram.com/_nitb_avantikulam_/',
         type: 'Educational Outreach',
         logo: '/avantikulam-logo.svg'
+      },
+      {
+        id: 'quizzers',
+        title: 'Quizzer\'s Club',
+        description: 'Hosts quizzes on diverse topics, encouraging learning through competition and curiosity.',
+        link: 'https://www.quizzersclub.in/',
+        type: 'Educational',
+        logo: '/quizzers-logo.svg'
       }
     ],
     sportsAndHobby: [
@@ -143,14 +143,6 @@ const Resources = ({ currentUser, onLogout }) => {
             link: 'https://www.instagram.com/pixel.manit/',
             type: 'Hobby',
             logo: '/pixel-logo.svg'
-        },
-        {
-            id: 'quizzers',
-            title: 'Quizzer\'s Club',
-            description: 'Hosts quizzes on diverse topics, encouraging learning through competition and curiosity.',
-            link: 'https://www.quizzersclub.in/',
-            type: 'Hobby',
-            logo: '/quizzers-logo.svg'
         }
     ]
   };
@@ -160,7 +152,7 @@ const Resources = ({ currentUser, onLogout }) => {
       id: 1,
       title: "Semester Results",
       description: "Check your semester examination results, grades, and academic performance",
-      link: "https://manit.ac.in/results",
+      link: "https://students.manit.ac.in/result",
       type: "Academic Results",
       icon: "📋"
     },
@@ -288,7 +280,7 @@ const Resources = ({ currentUser, onLogout }) => {
             <h2 className="society-category-title">📚 Educational Outreach</h2>
             <div className="resources-grid">
               {societies.educational.map((society) => (
-                <div key={society.id} className={`resource-card ${society.id === 'avantikulam' ? 'smaller-card' : ''}`}>
+                <div key={society.id} className="resource-card">
                   <div className="resource-logo">
                     <img 
                       src={society.logo} 
@@ -299,7 +291,8 @@ const Resources = ({ currentUser, onLogout }) => {
                       }}
                     />
                     <span className="fallback-icon" style={{display: 'none'}}>
-                      {society.title === 'Avantikulam' ? '📚' : '📚'}
+                      {society.title === 'Avantikulam' ? '📚' :
+                       society.title === 'Quizzer\'s Club' ? '❓' : '📚'}
                     </span>
                   </div>
                   <h3 className="resource-title">{society.title}</h3>
@@ -331,8 +324,7 @@ const Resources = ({ currentUser, onLogout }) => {
                     />
                     <span className="fallback-icon" style={{display: 'none'}}>
                       {society.title === 'Purge' ? '🌿' :
-                       society.title === 'Pixel' ? '📷' :
-                       society.title === 'Quizzer\'s Club' ? '❓' : '🏆'}
+                       society.title === 'Pixel' ? '📷' : '🏆'}
                     </span>
                   </div>
                   <h3 className="resource-title">{society.title}</h3>
@@ -360,9 +352,13 @@ const Resources = ({ currentUser, onLogout }) => {
               <h3 className="resource-title">{resource.title}</h3>
               <p className="resource-description">{resource.description}</p>
               <div className="resource-action single-button">
-                <a href={resource.link} target="_blank" rel="noopener noreferrer">
-                  <button className="access-btn">Access Portal</button>
-                </a>
+                {resource.id === 2 ? (
+                  <button className="recruitment-btn">Coming Soon</button>
+                ) : (
+                  <a href={resource.link} target="_blank" rel="noopener noreferrer">
+                    <button className="access-btn">Access Portal</button>
+                  </a>
+                )}
               </div>
             </div>
           ))}

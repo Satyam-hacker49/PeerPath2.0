@@ -139,19 +139,46 @@
 }
 
 .resource-card {
-  background: rgba(26, 10, 82, 0.8);
-  border: 1px solid rgba(196, 181, 253, 0.2);
+  background: linear-gradient(135deg, rgba(26, 10, 82, 0.8) 0%, rgba(139, 92, 246, 0.1) 100%);
+  border: 2px solid rgba(196, 181, 253, 0.2);
   border-radius: 16px;
   padding: 1.5rem;
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.resource-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #8b5cf6, #a855f7, #c084fc);
 }
 
 .resource-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(139, 92, 246, 0.2);
-  border-color: rgba(196, 181, 253, 0.4);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(139, 92, 246, 0.3);
+  border-color: rgba(196, 181, 253, 0.5);
+}
+
+.resource-card .resource-title {
+  color: #c4b5fd;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.resource-card .resource-description {
+  color: #a78bfa;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  font-weight: 500;
 }
 
 .resource-header {
@@ -213,19 +240,6 @@
 .resource-rating {
   color: #fbbf24;
   font-size: 0.9rem;
-}
-
-.resource-title {
-  color: #c4b5fd;
-  margin-bottom: 1rem;
-  font-size: 1.3rem;
-  line-height: 1.4;
-}
-
-.resource-description {
-  color: #a78bfa;
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
 }
 
 .resource-action {
@@ -572,4 +586,6 @@
 .smaller-card .resource-description {
   font-size: 0.9rem;
   line-height: 1.4;
-} 
+}
+
+/* Removed avantikulam-card specific styles since all cards now have enhanced styling */ 
