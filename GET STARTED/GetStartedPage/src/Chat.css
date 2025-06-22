@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .chat-container {
   min-height: 100vh;
   background: linear-gradient(135deg, #0f0f23 0%, #1a0a52 25%, #3d20b3 50%, #7c3aed 75%, #a855f7 100%);
@@ -144,6 +148,7 @@
   font-size: 1rem;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Add this line */
 }
 
 .search-box input:focus {
