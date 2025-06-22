@@ -557,4 +557,19 @@
   .modal-actions {
     flex-direction: column;
   }
+}
+
+.smaller-card {
+  max-width: 33.333%;
+  width: 33.333%;
+  margin: 0 auto;
+}
+
+.smaller-card .resource-title {
+  font-size: 1.1rem;
+}
+
+.smaller-card .resource-description {
+  font-size: 0.9rem;
+  line-height: 1.4;
 } 

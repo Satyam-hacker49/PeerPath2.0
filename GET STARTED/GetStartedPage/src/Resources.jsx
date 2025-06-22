@@ -37,31 +37,23 @@ const Resources = ({ currentUser, onLogout }) => {
       {
         id: 'sae',
         title: 'SAE MANIT',
-        description: 'Promotes extensive engineering, designing and fabrication dedicated to create innovative solutions and advanced technologies in the field of automobiles.',
-        link: 'https://www.sae.org/',
+        description: 'The Society of Automotive Engineers\' student chapter focused on mobility engineering, vehicle fabrication (e.g., Baja, Supra), and hosting auto-tech events.',
+        link: 'https://www.manit.ac.in/content/sae-collegiate-club',
         type: 'Technical',
         logo: '/sae-logo.svg'
       },
       {
         id: 'ecell',
         title: 'E-Cell MANIT',
-        description: 'The Entrepreneurship Cell, fostering a startup culture through workshops, competitions, and E-Summit.',
-        link: 'https://www.ecellmanit.in/',
+        description: 'Encourages entrepreneurship via mentorship programs, startup support, pitch events, and ideation workshops.',
+        link: 'https://www.ecellnitb.in/?view=about',
         type: 'Technical',
         logo: '/ecell-logo.svg'
       },
       {
-        id: 'esseract',
-        title: 'Tesseract',
-        description: 'The official coding club of MANIT, focused on competitive programming, development, and machine learning.',
-        link: 'https://github.com/tesseractcoding',
-        type: 'Technical',
-        logo: '/tesseract-logo.svg'
-      },
-      {
         id: 'robotics',
-        title: 'Robotics Club MANIT',
-        description: 'Dedicated to robotics, automation, and mechatronics, participating in various national events.',
+        title: 'Robotics Club',
+        description: 'Builds technical expertise through hands-on robotics projects, competitions, and learning sessions.',
         link: 'https://www.instagram.com/roboticsclubmanit/',
         type: 'Technical',
         logo: '/robotics-logo.svg'
@@ -69,84 +61,94 @@ const Resources = ({ currentUser, onLogout }) => {
       {
         id: 'iste',
         title: 'ISTE MANIT',
-        description: 'The Indian Society for Technical Education chapter, focusing on the professional development of students and faculty.',
+        description: 'Enhances technical knowledge with seminars, workshops, and collaborations with industry professionals.',
         link: 'https://www.istemanit.in/',
         type: 'Technical',
         logo: '/iste-logo.svg'
       },
       {
         id: 'ieee',
-        title: 'IEEE MANIT Student Branch',
-        description: 'Advancing technology for humanity, this is the official IEEE student branch of MANIT Bhopal.',
-        link: 'https://ieee.manit.ac.in/',
+        title: 'IEEE MANIT',
+        description: 'Promotes learning in electronics, computing, and emerging tech, conducting technical events and hackathons.',
+        link: 'https://ieeenitb.com/',
         type: 'Technical',
         logo: '/ieee-logo.svg'
+      },
+      {
+        id: 'zenith',
+        title: 'Zenith (Programming Club)',
+        description: 'Conducts DSA classes, contests, and placement prep, aiming to improve coding proficiency and problem-solving skills.',
+        link: 'https://www.facebook.com/zenith.manit',
+        type: 'Technical',
+        logo: '/zenith-logo.svg'
+      },
+      {
+        id: 'evolve',
+        title: 'Evolve',
+        description: 'Interdisciplinary technical club conducting EV design workshops, power electronics and ML projects, and practical prototyping across domains.',
+        link: 'https://www.instagram.com/evolve_nitb/',
+        type: 'Technical',
+        logo: '/evolve-logo.svg'
       }
     ],
     cultural: [
       {
         id: 'roobaroo',
         title: 'Roobaroo',
-        description: 'The cultural and literary hub of MANIT, responsible for organizing fests and cultural events.',
-        link: 'https://www.facebook.com/roobaroo.manit',
+        description: 'Celebrates artistic expression via music, dance, drama, and anchoring — a creative platform for all talents.',
+        link: 'https://www.manit.ac.in/content/roobaroo',
         type: 'Cultural',
         logo: '/roobaroo-logo.svg'
       },
       {
-        id: 'drishtant',
-        title: 'Drishtant',
-        description: 'The official dramatics society of MANIT, known for its nukkad nataks and stage plays.',
-        link: 'https://drishtantmanit.wordpress.com/',
+        id: 'aeseanek',
+        title: 'AE SE ANEK',
+        description: 'Promotes diversity and inclusion through culturally rich fests, inter-branch performances, and theme-based creative showcases.',
+        link: 'https://www.manit.ac.in/content/%E0%A4%90-%E0%A4%B8%E0%A5%87-%E0%A4%90%E0%A4%A8%E0%A4%95',
         type: 'Cultural',
-        logo: '/drishtant-logo.svg'
+        logo: '/aeseanek-logo.svg'
       },
       {
         id: 'spicmacay',
         title: 'SPIC MACAY',
-        description: 'Promotes Indian classical music, dance, and culture among youth through performances.',
-        link: 'https://spicmacay.org/',
+        description: 'Aims to preserve Indian heritage through classical music concerts, cultural awareness events, and arts appreciation.',
+        link: 'https://www.manit.ac.in/content/spic-macay',
         type: 'Cultural',
         logo: '/spicmacay-logo.svg'
-      },
+      }
+    ],
+    educational: [
       {
         id: 'avantikulam',
         title: 'Avantikulam',
-        description: 'A cultural group promoting regional arts, literature, and traditions within the campus community.',
-        link: 'https://www.instagram.com/avantikulam_manit/',
-        type: 'Cultural',
+        description: 'A social initiative providing free education and mentoring to underprivileged students preparing for JEE, NEET, NTSE, etc.',
+        link: 'https://www.instagram.com/_nitb_avantikulam_/',
+        type: 'Educational Outreach',
         logo: '/avantikulam-logo.svg'
       }
     ],
     sportsAndHobby: [
         {
-            id: 'zenith',
-            title: 'Zenith Sports Club',
-            description: 'The official sports club of MANIT, organizing various sporting events and promoting a healthy lifestyle.',
-            link: 'https://www.facebook.com/zenith.manit',
-            type: 'Sports',
-            logo: '/zenith-logo.svg'
-        },
-        {
-            id: 'pixel',
-            title: 'Pixel Photography Club',
-            description: 'The official photography and cinematography club of MANIT, for creative minds.',
-            link: 'https://www.instagram.com/pixel.manit/',
-            type: 'Hobby',
-            logo: '/pixel-logo.svg'
-        },
-        {
             id: 'purge',
             title: 'Purge',
-            description: 'An environmental society working on green initiatives and sustainable solutions.',
+            description: 'Drives eco-awareness campaigns, cleanups, and sustainability initiatives on campus.',
             link: 'https://www.instagram.com/purge_manit/',
             type: 'Environmental',
             logo: '/purge-logo.svg'
         },
         {
+            id: 'pixel',
+            title: 'Pixel',
+            description: 'For enthusiasts of visual media, photography, and video editing — covers both technical and creative angles.',
+            link: 'https://www.instagram.com/pixel.manit/',
+            type: 'Hobby',
+            logo: '/pixel-logo.svg'
+        },
+        {
             id: 'quizzers',
             title: 'Quizzer\'s Club',
-            description: 'The official quizzing club of MANIT, for enthusiasts of trivia, quizzes, and brain-teasers.',
-            link: 'https://www.quizzersclubmanit.in/',
+            description: 'Hosts quizzes on diverse topics, encouraging learning through competition and curiosity.',
+            link: 'https://www.quizzersclub.in/',
             type: 'Hobby',
             logo: '/quizzers-logo.svg'
         }
@@ -213,7 +215,7 @@ const Resources = ({ currentUser, onLogout }) => {
       return (
         <>
           <div className="society-category">
-            <h2 className="society-category-title">⚙️ Technical Societies</h2>
+            <h2 className="society-category-title">🛠 Technical Societies</h2>
             <div className="resources-grid">
               {societies.technical.map((society) => (
                 <div key={society.id} className="resource-card">
@@ -229,10 +231,11 @@ const Resources = ({ currentUser, onLogout }) => {
                     <span className="fallback-icon" style={{display: 'none'}}>
                       {society.title === 'SAE MANIT' ? '🏎️' :
                        society.title === 'E-Cell MANIT' ? '💡' :
-                       society.title === 'Tesseract' ? '💻' :
-                       society.title === 'Robotics Club MANIT' ? '🤖' :
+                       society.title === 'Robotics Club' ? '🤖' :
                        society.title === 'ISTE MANIT' ? '🎓' :
-                       society.title === 'IEEE MANIT Student Branch' ? '💡' : '🏛️'}
+                       society.title === 'IEEE MANIT' ? '💡' :
+                       society.title === 'Zenith (Programming Club)' ? '💻' :
+                       society.title === 'Evolve' ? '⚡' : '🏛️'}
                     </span>
                   </div>
                   <h3 className="resource-title">{society.title}</h3>
@@ -249,7 +252,7 @@ const Resources = ({ currentUser, onLogout }) => {
           </div>
 
           <div className="society-category">
-            <h2 className="society-category-title">🎨 Cultural Societies</h2>
+            <h2 className="society-category-title">🎭 Cultural & Literary Societies</h2>
             <div className="resources-grid">
               {societies.cultural.map((society) => (
                 <div key={society.id} className="resource-card">
@@ -264,9 +267,8 @@ const Resources = ({ currentUser, onLogout }) => {
                     />
                     <span className="fallback-icon" style={{display: 'none'}}>
                       {society.title === 'Roobaroo' ? '🎨' :
-                       society.title === 'Drishtant' ? '🎭' :
-                       society.title === 'SPIC MACAY' ? '🎶' :
-                       society.title === 'Avantikulam' ? '🏛️' : '🎨'}
+                       society.title === 'AE SE ANEK' ? '🏛️' :
+                       society.title === 'SPIC MACAY' ? '🎶' : '🎨'}
                     </span>
                   </div>
                   <h3 className="resource-title">{society.title}</h3>
@@ -283,7 +285,38 @@ const Resources = ({ currentUser, onLogout }) => {
           </div>
 
           <div className="society-category">
-            <h2 className="society-category-title">🏅 Sports & Hobby Clubs</h2>
+            <h2 className="society-category-title">📚 Educational Outreach</h2>
+            <div className="resources-grid">
+              {societies.educational.map((society) => (
+                <div key={society.id} className={`resource-card ${society.id === 'avantikulam' ? 'smaller-card' : ''}`}>
+                  <div className="resource-logo">
+                    <img 
+                      src={society.logo} 
+                      alt={`${society.title} logo`}
+                      onError={(e) => {
+                        e.target.style.display = 'none';
+                        e.target.nextSibling.style.display = 'block';
+                      }}
+                    />
+                    <span className="fallback-icon" style={{display: 'none'}}>
+                      {society.title === 'Avantikulam' ? '📚' : '📚'}
+                    </span>
+                  </div>
+                  <h3 className="resource-title">{society.title}</h3>
+                  <p className="resource-description">{society.description}</p>
+                  <div className="resource-action">
+                    <a href={society.link} target="_blank" rel="noopener noreferrer">
+                      <button className="access-btn">Visit Page</button>
+                    </a>
+                    <button className="recruitment-btn">Recruitment Coming Soon</button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="society-category">
+            <h2 className="society-category-title">🌱 Environment, Sports & Hobby Clubs</h2>
             <div className="resources-grid">
               {societies.sportsAndHobby.map((society) => (
                 <div key={society.id} className="resource-card">
@@ -297,9 +330,8 @@ const Resources = ({ currentUser, onLogout }) => {
                       }}
                     />
                     <span className="fallback-icon" style={{display: 'none'}}>
-                      {society.title === 'Zenith Sports Club' ? '🏆' :
-                       society.title === 'Pixel Photography Club' ? '📷' :
-                       society.title === 'Purge' ? '🌿' :
+                      {society.title === 'Purge' ? '🌿' :
+                       society.title === 'Pixel' ? '📷' :
                        society.title === 'Quizzer\'s Club' ? '❓' : '🏆'}
                     </span>
                   </div>
@@ -384,4 +416,4 @@ const Resources = ({ currentUser, onLogout }) => {
   );
 };
 
-export default Resources; 
+export default Resources;
