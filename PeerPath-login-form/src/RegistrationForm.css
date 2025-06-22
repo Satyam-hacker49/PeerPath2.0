@@ -1,0 +1,146 @@
+/* Left Part of Login Form */
+
+.Registration-Left-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     float:right;
+     width:50%;
+     height:100%;
+
+}
+/* Social Account Registeration */
+.Regis-socialaccount{
+    display: flex;
+    padding:0px;
+    height:50px;
+    width:200px;
+}
+/* Scholar Number Input */
+.scholarnuminput{
+    width: 80%;
+    height:50px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display:flex;
+}
+#scholarNum{
+     width: 80%;
+     height:95%;
+     padding-left: 20px;
+     border-radius: 5px;
+     border: none;
+     outline: none;
+     font-size: 20px;
+}
+#scholarNumicondiv{
+    width:20%;
+    height: 100%;
+
+}
+#scholaricon{
+    padding-top: 5px;
+    cursor: pointer;
+}
+/* Issue Input */
+.IssueInput{
+    width: 80%;
+    height:50px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display:flex;
+}
+#Issue{
+     width: 100%;
+     max-height:90%;
+     padding-left: 20px;
+     border-radius: 5px;
+     border: none;
+     outline: none;
+     font-size: 20px;
+}
+/* Issue Submit Button */
+.issuesubmitbtn{
+    width: 80%;
+    height:50px;
+    font-size: 20px;
+    background-color: aquamarine;
+}
+.issuesubmitbtn:hover{
+    background-color: #e0f7fa;
+    transition: background-color 0.3s ease-in-out,transform 0.3s ease-in-out;
+    transform:scale(1.03);
+}
+
+/* Right Part of Login Form */
+.Registration-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:3px solid #ccc;
+    border-radius: 25px;
+    width:900px;
+    height:80vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+}
+.Registration-Right-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float:right; 
+    width:50%;
+    height:100%;
+    background-color: aquamarine;
+    border-radius: 120px 25px 25px 120px;
+}
+.loginbtn{
+    width:50%;
+    border:2px solid rgb(0, 0, 0);
+    background-color: aquamarine;
+    
+}
+.loginbtn:hover{
+    background-color: #e0f7fa;
+    transition: background-color 0.3s ease-in-out,transform 0.3s ease-in-out;
+    transform:scale(1.05);
+}
+
+/* Registration Social icon */
+
+.regis-social-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.regis-social-title {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.Regis-socialaccount {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.regis-icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.regis-icon-link:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}

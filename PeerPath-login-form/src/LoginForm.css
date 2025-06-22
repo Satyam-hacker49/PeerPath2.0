@@ -1,0 +1,127 @@
+/* Login Form */
+.login-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:3px solid #ccc;
+    border-radius: 25px;
+    width:900px;
+    height:80vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+/* Left Part of Login Form */
+
+.Left-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float:left; 
+    width:50%;
+    height:100%;
+    background-color: aquamarine;
+    border-radius: 25px 120px 120px 25px;
+}
+.registerbtn{
+    width:50%;
+    border:2px solid rgb(0, 0, 0);
+    background-color: aquamarine;
+    
+}
+.registerbtn:hover{
+    background-color: #e0f7fa;
+    transition: background-color 0.3s ease-in-out,transform 0.3s ease-in-out;
+    transform:scale(1.05);
+}
+
+/* Right Part of Login Form */
+
+.Right-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     float:right;
+     width:50%;
+     height:100%;
+
+}
+/* Username Input */
+.usernameInput{
+    width: 80%;
+    height:50px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display:flex;
+}
+#Username{
+     width: 80%;
+     height:95%;
+     padding-left: 20px;
+     border-radius: 5px;
+     border: none;
+     outline: none;
+     font-size: 20px;
+}
+#usericondiv{
+    width:20%;
+    height: 100%;
+
+}
+#usericon{
+    padding-top: 5px;
+    cursor: pointer;
+}
+/* Passsword Input */
+.passwordInput{
+    width: 80%;
+    height:50px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display:flex;
+}
+#Password{
+     width: 80%;
+     height:95%;
+     padding-left: 20px;
+     border-radius: 5px;
+     border: none;
+     outline: none;
+     font-size: 20px;
+}
+#passicondiv{
+    width:20%;
+    height: 100%;
+
+}
+#passicon{
+    padding-top: 12px;
+    cursor: pointer;
+}
+/* Login Button */
+.Loginbtn{
+    width: 80%;
+    height:50px;
+    font-size: 20px;
+    background-color: aquamarine;
+}
+.Loginbtn:hover{
+    background-color: #e0f7fa;
+    transition: background-color 0.3s ease-in-out,transform 0.3s ease-in-out;
+    transform:scale(1.03);
+}
+/* Social Account Login */
+.socialaccount{
+    display:flex;
+    justify-content: center;
+    padding:0px;
+    height:50px;
+    width:80px;
+}
+.SocialIcon:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
